@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Forgotten password | Can't Log in | Facebook</title>
+	<style type="text/css">
+		img{
+			padding-right: 0px;
+			width: 150px;
+			height: 60px;
+		}
+		nav{
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			justify-content: space-between;
+
+		}
+		.form-content{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+		.form-content a{
+			cursor: pointer;
+			text-decoration: none;
+			color: #1877f2;
+		}
+		.form-content form{
+			margin: 0px 10px;
+			display: flex;
+			align-items: center;
+		}
+		.form-content form input{
+			font-size: 15px;
+			padding: 10px;
+			margin: 0px 3px;
+			width: 150px;
+			border: none;
+			border: 1px solid rgb(233, 233,233);
+			border-radius: 5px;
+		}
+		.form-content form input:focus{
+			outline: none;
+			border: 1px solid #1877f2;
+		}
+		#login-btn{
+			width: 70px;
+			background-color: #1877f2;
+			color: #fff;
+			font-family:  SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+			border: none;
+			border-radius: 5px;
+			font-size: 18px;
+			font-weight: 300;
+			height: 38px;
+		}
+		.main-container{
+			height: 400px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #f0f2f5;
+		}
+		.inner-container{
+			background-color: #fff;
+			padding: 10px;
+			border-radius: 5px;
+			width: 500px;
+		}
+		.inner-container h1{
+			font-family: inherit;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		.inner-container p{
+			font-family: inherit;
+			font-size: 20px;
+		}
+		.inner-container input{
+			font-size: 18px;
+			padding: 15px;
+			margin: 1px;
+			border: none;
+			border: 1px solid rgb(233,233,233);
+			border-radius: 5px;
+			width: 93%;
+		}
+		.inner-container input:focus{
+			outline: none;
+			border: 1px solid #1877f2;
+		}
+		.inner-container hr{
+			border: 1px solid rgb(233,233,233);
+			margin: 15px 0px;
+
+		}
+		.cancel-search{
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+		}
+		.cancel-search #search-btn{
+			width: 80px;
+			padding: 7px;
+			background-color: #1877f2;
+			color: #fff;
+			font-family: inherit;
+			font-size: 20px;
+			border: none;
+			border-radius: 5px;
+			font-weight: 500;
+			margin: 0px 10px;
+		}
+		#cancel-btn{
+			border: none;
+			font-size: 17px;
+			padding: 10px;
+			font-weight: 550;
+			border-radius: 5px;
+		}
+		#cancel-btn a{
+			text-decoration: none;
+			color: rgb(63, 63,63);
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg">
+		<div class="form-content">
+		<form action="#" method="post">
+			<input type="text" name="usermail_phone" placeholder="Email address or mobile number">
+			<input type="password" name="userpassword" placeholder="password">
+			<input type="submit" value="Log in" id="login-btn">
+		</form>
+		<a href="#">Forgotten?</a>
+		</div>
+	</nav>
+	<div class="main-container">
+		<form class="inner-container" action="#">
+			<h1>Find your account</h1>
+			<hr>
+			<p>	
+Please enter your email address or mobile number to search for your account.</p>
+			<input type="text" name="usermail_phone" placeholder="Email address or mobile number">
+			<hr>
+			<div class="cancel-search">
+				<button id="cancel-btn">
+					<a href="index.html">Cancel</a>
+				</button>
+				<input type="submit" value="search" id="search-btn">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
